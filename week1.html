@@ -3,65 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tailwind Fonts Overview</title>
+  <title>Week 1 - Gebruiksonderzoek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="./dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/flexboxes.css">
   <link rel="stylesheet" href="assets/nav.css">
   <link rel="stylesheet" href="assets/typography.css">
 </head>
-<body class="bg-gray-900 text-white font-mono leading-relaxed p-6">
+
+<body class="text-white font-space-grotesk flex flex-col min-h-screen">
+
+  <!-- sticky navigation container -->
+  <div class="sticky top-0 z-40 bg-[#2f2d2d]/80 backdrop-blur-sm py-1 shadow-xl border-b-2 border-[#333]">
+    
+    <!-- navigation - flexible flow -->
+    <nav class="flex justify-between items-center px-4 my-2">
+      <!-- Name and classgroup on left -->
+      <div class="text-white text-sm font-semibold w-24">
+        <p>Precious Cotteleer</p>
+        <p class="text-gray-100">1GDM2</p>
+      </div>
+      
+      <!-- Week buttons in center -->
+      <div class="flex flex-wrap justify-center gap-2 flex-1">
+        <a href="week1.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 1</a>
+        <a href="week2.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 2</a>
+        <a href="week3.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 3</a>
+        <a href="week4.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 4</a>
+        <a href="week5.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 5</a>
+        <a href="week6.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 6</a>
+        <a href="week7.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 7</a>
+        <a href="week8.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 8</a>
+      </div>
+      
+      <!-- HOME button on right -->
+      <a href="index.html" class="w-24 text-center px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition font-semibold">HOME</a>
+    </nav>
+  </div>
+
+  <!-- scrollable content -->
+  <div class="scroll-fade-content">
+
+<!-- titel -->
+    <h1 class="text-center text-4xl font-bold mb-4 font-space-grotesk">Logboek Lost In Tra(i)nslation</h1>
+
+<h3 class="text-center text-4xl font-bold mb-4 font-space-grotesk text-white">Week 1</h3>
+
+<h3 class="text-center text-2xl font-semibold mb-4 font-space-grotesk">Gebruiksonderzoek</h3>
+<p class="text-center mb-4">Voordat we aan de slag gaan met het ontwerpen van de treinschermen, <br> is het altijd belangrijk om 
+  een gebruiksonderzoek te doen,
+  om er achter te komen wat de noden en wensen zijn van de klanten. <br> 
+  Hiervoor gebruiken we een gebruiksonderzoek, we hebben het deze keer simpel gehouden maar met 1 vraag te stellen,<br> en deze vervolgens aan een aantal vrienden en familie te stellen.</p>
+</p>
+
+<div class="flex justify-center mt-6">
+  <p class="inline-block bg-[#212121] text-white px-4 py-2 rounded-lg shadow">
+    Vraag: Wat zoek je eerst op een treinscherm?<br>
+Antwoord: perron, tijd & destinatie.
+  </p>
+</div>
 
 
-<h1 class="text-center text-4xl font-bold mb-4">Week 1</h1>
-<h3 class="text-center text-2xl font-semibold mb-4">Gebruiksonderzoek</h3>
+<h3 class="text-center text 2x1 font-semibold mt-6 mb-4 font-courier">Low-Fidelity: Analoge Schetsen</h3>
+<p class="text-center mb-4">Dit zijn mijn eerste schetsen die ik heb gemaakt. <br>
+  Ik was begonnen met een grid systeem om al de oppervlakte die ik had op te verdelen.</p>
 
+<!-- image -->
+<div class="flex justify-center items-center mb-2 scroll-animate-left">
+<div class="transform -rotate-90">
+  <img src="assets/images/schets1_OV.jpg" alt="Overzichtscherm"
+  class="w-[450px] h-auto shadow-lg">
+</div>
+</div>
 
-<p class="text-center mb-4">Vraag: Wat zoek je eerst op een treinscherm?<br>
-Antwoord: perron, tijd & destinatie.</p>
+<div class="flex justify-center items-center mb-2 scroll-animate-right">
+  <img src="assets/images/schets2_OV.jpg" alt="Perronscherm"
+  class="w-[450px] h-auto shadow-lg">
+  </div>
+</div>
 
+<div class="flex justify-center items-center mb-2 scroll-animate-left">
+<div class="transform -rotate-90">
+  <img src="assets/images/schets3_OV.jpg" alt="Wagonindelingscherm"
+  class="w-[450px] h-auto shadow-lg">
+</div>
+</div>
 
-<h3 class="text-center text 2x1 font-semibold mb-4">Low-Fidelity: Eerste Schetsen</h3>
-<p class="text-center mb-4">Voordat ik begon met schetsen maken ben ik eerst opzoek gegaan naar referentie fotos,<br>
-adhv deze referenties heb ik schetsen gemaakt</p>
+<p class="text-center mb-4 font-bold">Feedback in de les:</p>
+<p class="text-center mb-4">Kleuren gebruiken om de belangrijke dingen aan te duiden, iconen toevoegen.<br>
+  Deze feedback heb ik vervolgens toegepast in mijn volgende schetsen hieronder, <br>
+  deze heb ik ook ingescand zodat het duidelijker zichtbaar is.
 
-<p class="text-center mb-4">Referentie Fotos:</p>
+<p class="text-center font-semibold mb-4">Overzichtscherm:</p>
 
-<p class="text-center mb-4">Bij al mijn schetsen ben ik eerst begonnen met kaders te maken en deze dan op te splitsen in een grid<br>
-om zo alles mooi op te delen. Vervolgens heb ik alles benoemd.</p>
-
-<p class="text-center mb-4">Overzichtscherm:</p>
-
-<div class="flex justify-center items-center h-screen">
+<!-- image -->
+<div class="flex justify-center items-center -mb-12 scroll-animate-right">
   <div class="transform -rotate-90">
     <img src="assets/images/Overzichtscherm_schets.jpeg" 
          alt="Overzichtscherm" 
-         class="w-[650px] m-px h-auto rounded-lg shadow-lg"> 
+         class="w-[450px] m-px h-auto shadow-lg"> 
   </div>
 </div>
 
-<p class="text-center mb-4">Perrsonscherm:</p>
+<p class="text-center font-semibold mb-4">Perrsonscherm:</p>
 
-<div class="flex justify-center items-center h-screen">
+<!---quick fix spatiering--->
+<br>
+<br>
+<br>
+
+<!-- image -->
+<div class="flex justify-center items-center mb-2 scroll-animate-left">
   <img src="assets/images/Perrsonscherm_schets.jpeg" alt="Perronscherm"
-  alt="Perrsonscherm"
-  class="w-[650px] h-auto rounded-lg shadow-lg">
+  class="w-[450px] h-auto shadow-lg">
   </div>
 </div>
 
-<p class="text-center mb-4">Wagonindelingscherm:</p>
+<br>
+<br>
+<br>
+<p class="text-center font-semibold mb-4">Wagonindelingscherm:</p>
 
-<div class="flex justify-center items-center h-screen">
+<!-- image -->
+<div class="flex justify-center items-center mb-2 scroll-animate-right">
 <div class="transform -rotate-90">
   <img src="assets/images/Wagonindelingscherm_schets.jpeg" alt="Wagonindelingscherm"
-  alt="Wagonindelingscherm"
-  class="w-[650px] h-auto rounded-lg shadow-lg">
+  class="w-[450px] h-auto shadow-lg">
 </div>
 </div>
 
-<h3 class="text-center text-2xl font-semibold mb-4">Verbeterde versie schetsen</h3>
+<!-- back to top button -->
+<div class="flex justify-center mb-4">
+  <button id="backToTop" 
+          class="px-5 py-2 bg-purple-300 text-white rounded hover:bg-purple-400 transition font-semibold">
+    ↑ Back to Top
+  </button>
+</div>
+  </div>
 
-<p class="text-center mb-4">Bij de verbeterde versies van mijn schetsen heb ik kleuren toegevoegd om aan te tonen wat de belangrijkste punten waren naar aanleiding van mijn gebruiksonderzoek.</p>
+  <!-- footer -->
+  <footer class="mt-auto bg-[#333] text-white text-center p-2 text-sm leading-relaxed">
+      <p>PRTT Week 1 Cotteleer Precious - Lost in Tra(i)nslation</p>
+  </footer>
+
+  <!-- scripts -->
+  <script src="assets/scroll-animate.js"></script>
+  <script src="assets/lightbox.js"></script>
+  <script src="assets/cursor.js"></script>
+  <script src="assets/BackToTop.js"></script>
+  <script src="scroll-fade.js"></script>
 
 </body>
 </HTML>

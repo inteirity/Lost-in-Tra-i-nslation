@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        courier: ["'Space Grotesk'", "sans-serif"],
+        'space-grotesk': ["'Space Grotesk'", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

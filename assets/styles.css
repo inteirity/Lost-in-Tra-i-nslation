@@ -1,15 +1,20 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 body{
-    background-color: antiquewhite;
-    color: #161717;
+    background-color: #2f2d2d;
+    color: #212121;
     height:auto;
     min-height:100vh;
-    font-family: 'Roboto';
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: url('assets/cursor/purple-cursor.svg') 16 16, auto;
 }
+
+
+
+
+
 
 header{
     background-color: antiquewhite;
@@ -62,7 +67,13 @@ h3 {
 img {
     max-width: 100%;
     height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
+
+.transform {
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
 
