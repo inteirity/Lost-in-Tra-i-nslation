@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Week 1 - Gebruiksonderzoek</title>
+  <title>Projectdocumentatie - Week 1</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,101 +14,129 @@
   <link rel="stylesheet" href="assets/typography.css">
 </head>
 
-<body class="text-white font-space-grotesk flex flex-col min-h-screen">
+<body class="text-white font-space-grotesk flex flex-col min-h-screen overflow-x-hidden max-w-full">
 
   <!-- sticky navigation container -->
   <div class="sticky top-0 z-40 bg-[#2f2d2d]/80 backdrop-blur-sm py-1 shadow-xl border-b-2 border-[#333]">
     
-    <!-- navigation - flexible flow -->
-    <nav class="flex justify-between items-center px-4 my-2">
-      <!-- Name and classgroup on left -->
-      <div class="text-white text-sm font-semibold w-24">
-        <p>Precious Cotteleer</p>
-        <p class="text-gray-100">1GDM2</p>
+     <!-- navigation - flexible flow -->
+          <div class="flex justify-between items-center gap-4 px-4">
+        <!-- Name and classgroup on left -->
+        <div class="text-white text-sm font-semibold w-24 flex-shrink-0">
+          <p>Precious Cotteleer</p>
+          <p class="text-gray-100">1GDM2</p>
+        </div>
+        
+        <!-- Week buttons in center (hidden on mobile) -->
+        <div class="hidden md:block flex-1">
+          <div class="grid grid-cols-6 gap-2 max-w-3xl mx-auto">
+            <a href="week1.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 1</a>
+            <a href="week2.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 2</a>
+            <a href="week3.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 3</a>
+            <a href="week4.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 4</a>
+            <a href="week5.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 5</a>
+            <a href="week6.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 6</a>
+            <a href="week7.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 7</a>
+            <a href="week8.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 8</a>
+            <a href="week9.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 9</a>
+            <a href="week10.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 10</a>    
+            <a href="week11.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 11</a>
+            <a href="week12.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 12</a>
+          </div>
+        </div>
+        
+        <!-- Hamburger Menu Button (visible on mobile only) -->
+        <button id="mobileMenuBtn" class="md:hidden text-white text-2xl">
+          ☰
+        </button>
+        
+        <!-- HOME button on right (hidden on mobile) -->
+        <a href="index.html" class="hidden md:block w-24 text-center px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition font-semibold flex-shrink-0">HOME</a>
       </div>
       
-      <!-- Week buttons in center -->
-      <div class="flex flex-wrap justify-center gap-2 flex-1">
-        <a href="week1.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 1</a>
-        <a href="week2.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 2</a>
-        <a href="week3.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 3</a>
-        <a href="week4.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 4</a>
-        <a href="week5.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 5</a>
-        <a href="week6.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 6</a>
-        <a href="week7.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 7</a>
-        <a href="week8.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition">Week 8</a>
+      <!-- Mobile Menu Dropdown (hidden by default) -->
+      <div id="mobileMenu" class="hidden md:hidden flex-col gap-2 mt-4">
+        <a href="week1.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 1</a>
+        <a href="week2.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 2</a>
+        <a href="week3.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 3</a>
+        <a href="week4.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 4</a>
+        <a href="week5.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 5</a>
+        <a href="week6.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 6</a>
+        <a href="week7.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 7</a>
+        <a href="week8.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 8</a>
+        <a href="week9.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 9</a>
+        <a href="week10.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 10</a>
+        <a href="week11.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 11</a>
+        <a href="week12.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition text-center">Week 12</a>
+        <a href="index.html" class="px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition font-semibold text-center">HOME</a>
       </div>
-      
-      <!-- HOME button on right -->
-      <a href="index.html" class="w-24 text-center px-4 py-2 bg-purple-300 text-white rounded shadow-lg hover:bg-purple-400 hover:shadow-xl transition font-semibold">HOME</a>
     </nav>
   </div>
 
   <!-- scrollable content -->
-  <div class="scroll-fade-content">
+  <div class="scroll-fade-content flex-grow flex flex-col">
 
 <!-- titel -->
-    <h1 class="text-center text-4xl font-bold mb-4 font-space-grotesk">Logboek Lost In Tra(i)nslation</h1>
+    <h1 class="text-center text-2xl md:text-4xl font-bold mb-4 font-space-grotesk px-4">Logboek Lost In Tra(i)nslation</h1>
 
-<h3 class="text-center text-4xl font-bold mb-4 font-space-grotesk text-white">Week 1</h3>
+<h3 class="text-center text-2xl md:text-4xl font-bold mb-4 font-space-grotesk text-white px-4">Week 1</h3>
 
-<h3 class="text-center text-2xl font-semibold mb-4 font-space-grotesk">Gebruiksonderzoek</h3>
-<p class="text-center mb-4">Voordat we aan de slag gaan met het ontwerpen van de treinschermen, <br> is het altijd belangrijk om 
+<h3 class="text-center text-xl md:text-2xl font-semibold mb-4 font-space-grotesk px-4">Gebruiksonderzoek</h3>
+<p class="text-center text-sm md:text-base mb-4 px-4">Voordat we aan de slag gaan met het ontwerpen van de treinschermen, <br class="hidden md:block"> is het altijd belangrijk om 
   een gebruiksonderzoek te doen,
-  om er achter te komen wat de noden en wensen zijn van de klanten. <br> 
-  Hiervoor gebruiken we een gebruiksonderzoek, we hebben het deze keer simpel gehouden maar met 1 vraag te stellen,<br> en deze vervolgens aan een aantal vrienden en familie te stellen.</p>
+  om er achter te komen wat de noden en wensen zijn van de klanten. <br class="hidden md:block"> 
+  Hiervoor gebruiken we een gebruiksonderzoek, we hebben het deze keer simpel gehouden maar met 1 vraag te stellen,<br class="hidden md:block"> en deze vervolgens aan een aantal vrienden en familie te stellen.</p>
 </p>
 
-<div class="flex justify-center mt-6">
-  <p class="inline-block bg-[#212121] text-white px-4 py-2 rounded-lg shadow">
+<div class="flex justify-center mt-6 px-4">
+  <p class="inline-block bg-[#212121] text-white px-4 py-2 rounded-lg shadow text-sm md:text-base max-w-full">
     Vraag: Wat zoek je eerst op een treinscherm?<br>
 Antwoord: perron, tijd & destinatie.
   </p>
 </div>
 
 
-<h3 class="text-center text 2x1 font-semibold mt-6 mb-4 font-courier">Low-Fidelity: Analoge Schetsen</h3>
-<p class="text-center mb-4">Dit zijn mijn eerste schetsen die ik heb gemaakt. <br>
+<h3 class="text-center text-xl md:text-2xl font-semibold mt-6 mb-4 font-courier px-4">Low-Fidelity: Analoge Schetsen</h3>
+<p class="text-center text-sm md:text-base mb-4 px-4">Dit zijn mijn eerste schetsen die ik heb gemaakt. <br>
   Ik was begonnen met een grid systeem om al de oppervlakte die ik had op te verdelen.</p>
 
 <!-- image -->
-<div class="flex justify-center items-center mb-2 scroll-animate-left">
+<div class="flex justify-center items-center scroll-animate-left overflow-hidden">
 <div class="transform -rotate-90">
   <img src="assets/images/schets1_OV.jpg" alt="Overzichtscherm"
-  class="w-[450px] h-auto shadow-lg">
+  class="w-1/3 mx-auto mb-4">
 </div>
 </div>
 
-<div class="flex justify-center items-center mb-2 scroll-animate-right">
+<div class="flex justify-center items-center scroll-animate-right">
   <img src="assets/images/schets2_OV.jpg" alt="Perronscherm"
-  class="w-[450px] h-auto shadow-lg">
-  </div>
+  class="w-1/3 mx-auto mb-4">
 </div>
 
-<div class="flex justify-center items-center mb-2 scroll-animate-left">
+<div class="flex justify-center items-center scroll-animate-left overflow-hidden">
 <div class="transform -rotate-90">
   <img src="assets/images/schets3_OV.jpg" alt="Wagonindelingscherm"
-  class="w-[450px] h-auto shadow-lg">
+  class="w-1/3 mx-auto mb-4">
 </div>
 </div>
 
-<p class="text-center mb-4 font-bold">Feedback in de les:</p>
-<p class="text-center mb-4">Kleuren gebruiken om de belangrijke dingen aan te duiden, iconen toevoegen.<br>
-  Deze feedback heb ik vervolgens toegepast in mijn volgende schetsen hieronder, <br>
+<p class="text-center text-sm md:text-base mb-4 font-bold px-4">Feedback in de les:</p>
+<p class="text-center text-sm md:text-base mb-4 px-4">Kleuren gebruiken om de belangrijke dingen aan te duiden, iconen toevoegen.<br class="hidden md:block">
+  Deze feedback heb ik vervolgens toegepast in mijn volgende schetsen hieronder, <br class="hidden md:block">
   deze heb ik ook ingescand zodat het duidelijker zichtbaar is.
 
-<p class="text-center font-semibold mb-4">Overzichtscherm:</p>
+<p class="text-center text-sm md:text-base font-semibold mb-4 px-4">Overzichtscherm:</p>
 
 <!-- image -->
-<div class="flex justify-center items-center -mb-12 scroll-animate-right">
+<div class="flex justify-center items-center -mb-12 scroll-animate-right overflow-hidden">
   <div class="transform -rotate-90">
     <img src="assets/images/Overzichtscherm_schets.jpeg" 
          alt="Overzichtscherm" 
-         class="w-[450px] m-px h-auto shadow-lg"> 
+         class="w-1/3 mx-auto mb-4"> 
   </div>
 </div>
 
-<p class="text-center font-semibold mb-4">Perrsonscherm:</p>
+<p class="text-center text-sm md:text-base font-semibold mb-4 px-4">Perrsonscherm:</p>
 
 <!---quick fix spatiering--->
 <br>
@@ -116,24 +144,26 @@ Antwoord: perron, tijd & destinatie.
 <br>
 
 <!-- image -->
-<div class="flex justify-center items-center mb-2 scroll-animate-left">
+<div class="flex justify-center items-center scroll-animate-left">
   <img src="assets/images/Perrsonscherm_schets.jpeg" alt="Perronscherm"
-  class="w-[450px] h-auto shadow-lg">
-  </div>
+  class="w-1/3 mx-auto mb-4">
 </div>
 
 <br>
 <br>
 <br>
-<p class="text-center font-semibold mb-4">Wagonindelingscherm:</p>
+<p class="text-center text-sm md:text-base font-semibold mb-4 px-4">Wagonindelingscherm:</p>
 
 <!-- image -->
-<div class="flex justify-center items-center mb-2 scroll-animate-right">
+<div class="flex justify-center items-center scroll-animate-right overflow-hidden">
 <div class="transform -rotate-90">
   <img src="assets/images/Wagonindelingscherm_schets.jpeg" alt="Wagonindelingscherm"
-  class="w-[450px] h-auto shadow-lg">
+  class="w-1/3 mx-auto mb-4">
 </div>
 </div>
+
+<!-- Spacer to push button to bottom -->
+<div class="flex-grow"></div>
 
 <!-- back to top button -->
 <div class="flex justify-center mb-4">
@@ -155,6 +185,19 @@ Antwoord: perron, tijd & destinatie.
   <script src="assets/cursor.js"></script>
   <script src="assets/BackToTop.js"></script>
   <script src="scroll-fade.js"></script>
+  
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+      });
+    }
+  </script>
 
 </body>
 </HTML>
