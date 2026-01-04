@@ -604,6 +604,10 @@ video {
   z-index: 40;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .m-px {
   margin: 1px;
 }
@@ -726,6 +730,11 @@ video {
   width: 5rem;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -781,6 +790,10 @@ video {
 
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-rows-2 {
@@ -897,6 +910,11 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .text-center {
